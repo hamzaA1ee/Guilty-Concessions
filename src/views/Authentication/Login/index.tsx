@@ -6,9 +6,6 @@ import { FC, Fragment } from 'react';
 // React Query Imports
 import { UserLoginMutationHook } from '@/services/react-query-client/auth/user-login';
 
-// Custom Component Imports
-import { Button } from '@/components/ui/button';
-
 interface ISignInViewProps {}
 
 const SignInView: FC<ISignInViewProps> = () => {
@@ -19,17 +16,8 @@ const SignInView: FC<ISignInViewProps> = () => {
    *
    * @returns {void}
    */
-  const handleLogin = async (): Promise<void> => {
-    mutateAsync({
-      email: 'aliraza@zenkoders.com',
-      password: '123123',
-    });
-  };
-  return (
-    <Fragment>
-      <Button onClick={handleLogin}>Login</Button>
-    </Fragment>
-  );
+
+  return <Fragment></Fragment>;
 };
 
 export default SignInView;
