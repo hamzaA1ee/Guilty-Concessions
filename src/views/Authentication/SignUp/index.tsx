@@ -12,27 +12,25 @@ import VerfiyEmailView from './VerifyEmail';
 import Image from 'next/image';
 
 //image imports
-import bubbleOne from '../../../../public/assets/images/Oval Copy 2.png';
-import bubbleTwo from '../../../../public/assets/images/Oval Copy 3.png';
+
 import oval from '../../../../public/assets/images/Oval.png';
-import bottomOval from '../../../../public/assets/images/Oval Copy.png';
 
 const SignUpView = () => {
-  const [step, setStep] = useState<number>(2);
+  const [step, setStep] = useState<number>(4);
   return (
     <Fragment>
-      <div className='flex items-center justify-center w-full h-screen  '>
-        <div className='flex items-center justify-between w-full'>
-          <div className={`w-[491px] ml-36 h-3/4 ${step > 1 && 'mb-20'} `}>
+      <div className='flex items-center justify-center w-full h-screen overflow-x-hidden overflow-y-hidden  '>
+        <div className='flex items-start justify-between w-full'>
+          <div className={`w-[491px] ml-36 h-3/4 ${step <= 1 && 'mt-30  '}  `}>
             {' '}
             {/*just change the forms here from now on.*/}
-            {/* <StepOneView /> */}
-            {/* <StepTwoView />   */}
-            {/* <ConfirmEmailView /> */}
-            <VerfiyEmailView />
+            {step == 1 && <StepOneView />}
+            {step == 2 && <StepTwoView />}
+            {step == 3 && <ConfirmEmailView />}
+            {step == 4 && <VerfiyEmailView />}
           </div>
           <div>
-            <MaskGroupView />
+            <MaskGroupView step={step} />
           </div>
         </div>
 
@@ -46,30 +44,6 @@ const SignUpView = () => {
               alt='bubble'
             ></Image>
           )}
-        </div>
-        <div className='absolute bottom-30 left-16'>
-          <Image
-            src={bubbleTwo}
-            width={53}
-            height={51}
-            alt='bubble'
-          ></Image>
-        </div>
-        <div className='absolute bottom-3 left-5'>
-          <Image
-            src={bubbleOne}
-            width={100}
-            height={98}
-            alt='bubble'
-          ></Image>
-        </div>
-        <div className='absolute bottom-0 right-0'>
-          <Image
-            src={bottomOval}
-            width={168}
-            height={159}
-            alt='bubble'
-          ></Image>
         </div>
       </div>
     </Fragment>

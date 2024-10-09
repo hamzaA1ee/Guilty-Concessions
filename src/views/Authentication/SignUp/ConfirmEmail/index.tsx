@@ -54,7 +54,7 @@ export default function ConfirmEmailView() {
         </Link>
       </div>
       <Button className='text-center mt-4 text-customWhite font-bold text-[14px] w-[487px] h-[40px] bg-customPurple rounded-3xl '>
-        {`Next >`}
+        {`Login`}
       </Button>
     </>
   );
