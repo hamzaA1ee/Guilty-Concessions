@@ -1,8 +1,4 @@
-import NavBarComponent from '@/components/NavBar';
 import LoginMaskGroup from '@/views/Authentication/Login/MaskGroup';
-
-//next Imports
-import Image from 'next/image';
 
 export default function AuthLayout({
   children,

@@ -6,7 +6,7 @@ import { Fragment, useState } from 'react';
 
 import ResetPasswordView from './ResetPassword';
 //next imports
-import Image from 'next/image';
+
 import NewPasswordView from './NewPassword';
 //image imports
 

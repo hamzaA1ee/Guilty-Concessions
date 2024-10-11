@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+
 
 //next imports
 import Image from 'next/image';

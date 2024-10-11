@@ -1,7 +1,7 @@
 'use client';
 
 // React Imports
-import { FC, Fragment } from 'react';
+import { FC } from 'react';
 import SignInFormView from './SignInForm';
 import LoginMaskGroup from './MaskGroup';
 

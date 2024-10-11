@@ -4,7 +4,7 @@ import Image from 'next/image';
 // image imports
 
 import stepOneImg from '@/../public/assets/images/stepOneImg.png';
-import ovalOne from '@/../public/assets/images/Img.png';
+
 import bitmap from '@/../public/assets/images/Bitmap.png';
 import bitmapTwo from '@/../../public/assets/images/bitmapTwo.png';
 export default function MaskGroupView({ step }: { step: number }) {
