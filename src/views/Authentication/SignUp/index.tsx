@@ -16,7 +16,7 @@ import Image from 'next/image';
 import oval from '@/../public/assets/images/Oval.png';
 
 const SignUpView = () => {
-  const [step] = useState<number>(2);
+  const [step] = useState<number>(1);
   return (
     <div className='flex items-center justify-center w-full h-screen overflow-x-hidden overflow-y-hidden  '>
       <div className='flex items-start lg:ml-32 gap-4 h-full mt-[150px]   lg:w-11/12 md:w-3/5 w-4/5'>

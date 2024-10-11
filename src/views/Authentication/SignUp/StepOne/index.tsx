@@ -1,5 +1,5 @@
 //custom components imports
-import ButtonTwo from '@/components/Button/button';
+import PrimaryButton from '@/components/Button/button';
 
 import { Button } from '@/components/ui/button';
 
@@ -24,7 +24,7 @@ export default function StepOneView() {
         placeholder='Enter Email'
       />
 
-      <ButtonTwo
+      <PrimaryButton
         text='Sign In'
         className=' bg-customPurple rounded-3xl '
       />

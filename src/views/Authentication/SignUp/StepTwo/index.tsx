@@ -1,6 +1,6 @@
 //custom components imports
 import { Button } from '@/components/ui/button';
-
+import PrimaryButton from '@/components/Button/button';
 //views imports
 
 //
@@ -93,9 +93,10 @@ export default function StepTwoView() {
         </label>
       </div>
 
-      <Button className='text-center mt-4 text-customWhite font-bold text-[14px] w-full h-[40px] bg-customPurple rounded-3xl '>
-        {`Next >`}
-      </Button>
+      <PrimaryButton
+        text='Next >'
+        className='text-center mt-4 text-customWhite font-bold text-[14px] w-full h-[40px] bg-customPurple rounded-3xl '
+      />
     </>
   );
 }
