@@ -52,7 +52,7 @@ export default function StepTwoView() {
           placeholder='Zip Code'
         />
       </div>
-      <div className='flex items-center justify-evenly mt-4 '>
+      <div className='flex items-center justify-evenly mt-4 gap-4 '>
         <input
           type='text'
           className='w-full h-[38px]  pl-4 border -2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'

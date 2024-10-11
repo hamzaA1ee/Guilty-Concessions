@@ -17,20 +17,18 @@ const SignInView: FC<ISignInViewProps> = () => {
    */
 
   return (
-    
-      <div className='flex items-center justify-center w-full h-screen overflow-x-hidden overflow-y-hidden  '>
-        <div className='flex items-start gap-64 h-full  mt-[150px] w-full'>
-          <div className={`max-w-[491px] ml-36 h-3/4   `}>
-            <SignInFormView />
-          </div>
-          <div className='h-full '>
-            <LoginMaskGroup />
-          </div>
+    <div className='flex items-center justify-center w-full h-screen overflow-x-hidden overflow-y-hidden  '>
+      <div className='flex items-start gap-64 h-full  mt-[150px] w-full'>
+        <div className={`max-w-[491px] ml-36 h-3/4   `}>
+          <SignInFormView />
         </div>
-
-        {/* //below the fixed shapes of oval that are used in desgin */}
+        <div className='h-full '>
+          <LoginMaskGroup />
+        </div>
       </div>
-    
+
+      {/* //below the fixed shapes of oval that are used in desgin */}
+    </div>
   );
 };
 

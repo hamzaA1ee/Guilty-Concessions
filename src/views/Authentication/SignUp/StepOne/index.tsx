@@ -1,4 +1,6 @@
 //custom components imports
+import ButtonTwo from '@/components/Button/button';
+
 import { Button } from '@/components/ui/button';
 
 //views imports
@@ -22,11 +24,13 @@ export default function StepOneView() {
         placeholder='Enter Email'
       />
 
-      <Button className='text-center text-customWhite font-bold text-[14px] w-full h-[38px] bg-customPurple rounded-3xl '>
-        Sign Up
-      </Button>
+      <ButtonTwo
+        text='Sign In'
+        className=' bg-customPurple rounded-3xl '
+      />
+
       <div
-        className='py-3 mt-4 mb-4 w-[90%]
+        className='py-3 mt-4 mb-4 
          flex items-center text-sm before:flex-1 before:border-t before:border-white before:me-6 after:flex-1 after:border-t after:border-white after:ms-6 dark:text-customGray dark:before:border-customGray dark:after:border-customGray'
       >
         OR

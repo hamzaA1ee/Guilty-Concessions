@@ -18,12 +18,12 @@ export default function AuthLayout({
       <NavBarComponent />
       {children}
       <div className='absolute top-28 right-0'>
-        {/* <Image
+        <Image
           src={ovalOne}
           width={350}
           height={340}
           alt='mask-group'
-        ></Image> */}
+        ></Image>
       </div>
       <div className='absolute bottom-30 left-16'>
         <Image
