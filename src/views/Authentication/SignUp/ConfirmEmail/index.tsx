@@ -13,7 +13,7 @@ export default function ConfirmEmailView() {
   return (
     <>
       <h1 className='text-[28px] font-bold'>Confirm Email</h1>
-      <p className='font-medium text-[14px] text-customGray '>
+      <p className='font-medium text-[14px] text-customGray  '>
         We have sent you a confirmation email, please check your email
         XXXX@XXX.com and then login to your account.
       </p>
@@ -53,7 +53,7 @@ export default function ConfirmEmailView() {
           Forget Password
         </Link>
       </div>
-      <Button className='text-center mt-4 text-customWhite font-bold text-[14px] w-[487px] h-[40px] bg-customPurple rounded-3xl '>
+      <Button className='text-center mt-4 text-customWhite font-bold text-[14px] w-full h-[40px] bg-customPurple rounded-3xl '>
         {`Login`}
       </Button>
     </>

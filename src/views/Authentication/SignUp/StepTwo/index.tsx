@@ -16,51 +16,51 @@ export default function StepTwoView() {
         Enter your details to proceed further
       </p>
 
-      <div className='flex items-center justify-evenly mt-8 mb-6'>
+      <div className='flex items-center justify-evenly mt-8 mb-6 gap-4 '>
         <input
           type='text'
-          className='w-[235px] h-[38px] mr-4 pl-4 border-2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
+          className='w-full h-[38px]  pl-4 border-2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
           placeholder='First Name'
         />
         <input
           type='text'
-          className='w-[235px] h-[38px] pl-4 border-2 border-customGrayTwo rounded-3xl text-customGrayTwo font-medium text-[14px]'
+          className='w-full h-[38px] pl-4 border-2 border-customGrayTwo rounded-3xl text-customGrayTwo font-medium text-[14px]'
           placeholder='Last Name'
         />
       </div>
       <input
         type='text'
-        className='w-full h-[38px] mr-4 pl-4 border-2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
+        className='w-full h-[38px]  pl-4 border-2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
         placeholder='Business Name'
       />
 
-      <div className='flex items-center justify-evenly mt-4 '>
+      <div className='flex items-center justify-evenly mt-4 gap-4 '>
         <input
           type='text'
-          className='w-[189px] h-[38px] mr-2 pl-4 border -2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
+          className='w-[40%] h-[38px]  pl-4 border -2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
           placeholder='Address'
         />
         <input
           type='text'
-          className='w-[108px] h-[38px] mr-2 pl-4 border-2 border-customGrayTwo rounded-3xl text-customGrayTwo font-medium text-[14px]'
+          className='w-[30%] h-[38px]  pl-4 border-2 border-customGrayTwo rounded-3xl text-customGrayTwo font-medium text-[14px]'
           placeholder='State'
         />
 
         <input
           type='text'
-          className='w-[168px] h-[38px] pl-4 border-2 border-customGrayTwo rounded-3xl text-customGrayTwo font-medium text-[14px]'
+          className='w-[40%] h-[38px] pl-4 border-2 border-customGrayTwo rounded-3xl text-customGrayTwo font-medium text-[14px]'
           placeholder='Zip Code'
         />
       </div>
       <div className='flex items-center justify-evenly mt-4 '>
         <input
           type='text'
-          className='w-[235px] h-[38px] mr-4 pl-4 border -2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
+          className='w-full h-[38px]  pl-4 border -2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
           placeholder='Phone Number'
         />
         <input
           type='text'
-          className='w-[235px] h-[38px] pl-4 border-2 border-customGrayTwo rounded-3xl text-customGrayTwo font-medium text-[14px]'
+          className='w-full h-[38px] pl-4 border-2 border-customGrayTwo rounded-3xl text-customGrayTwo font-medium text-[14px]'
           placeholder='Email'
         />
       </div>
@@ -93,7 +93,7 @@ export default function StepTwoView() {
         </label>
       </div>
 
-      <Button className='text-center mt-4 text-customWhite font-bold text-[14px] w-[487px] h-[40px] bg-customPurple rounded-3xl '>
+      <Button className='text-center mt-4 text-customWhite font-bold text-[14px] w-full h-[40px] bg-customPurple rounded-3xl '>
         {`Next >`}
       </Button>
     </>

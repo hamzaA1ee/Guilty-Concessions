@@ -80,7 +80,7 @@ export default function VerifyEmailView() {
                 'We have send you a verification link on your email. Please check your mail to verify your account',
               )
             }
-            className='text-center mt-4 text-customWhite font-bold text-[14px] w-[487px] h-[40px] bg-customPurple rounded-3xl '
+            className='text-center mt-4 text-customWhite font-bold text-[14px] w-full h-[40px] bg-customPurple rounded-3xl '
           >
             {`Verify`}
           </Button>

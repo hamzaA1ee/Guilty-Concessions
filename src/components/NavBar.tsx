@@ -1,13 +1,16 @@
-//custom imports
-import { Button } from './ui/button';
+'use client';
 
 //Next Imports
 import Image from 'next/image';
 
 //Image imports
 import logo from '../../public/assets/images/Group 60.png';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 export default function NavBarComponent() {
+  const pathName: string = usePathname().split('/')[2];
+  console.log(pathName);
   return (
     <>
       <div className='flex items-center justify-center fixed w-full'>
@@ -22,9 +25,14 @@ export default function NavBarComponent() {
             <h4 className='font-bold ml-2 '>Guilty Concessions</h4>
           </div>
           <div>
-            <Button className='w-[127px] h-[36px] rounded-2xl  font-bold  shadow-both-custom'>
-              LOGIN
-            </Button>
+            {pathName !== 'login' && (
+              <Link
+                href='./login'
+                className='inline-flex items-center justify-center w-[127px] h-[37px] font-bold rounded-2xl  shadow-both-custom'
+              >
+                LOGIN
+              </Link>
+            )}
           </div>
         </div>
       </div>
