@@ -1,6 +1,7 @@
 //custom components imports
 import PrimaryButton from '@/components/Button/button';
 import SocialButton from '@/components/Button/social-button';
+import HeaderText from '@/components/HeaderText';
 import PrimaryInput from '@/components/Input/PrimaryInput';
 
 //views imports
@@ -13,10 +14,10 @@ import PrimaryInput from '@/components/Input/PrimaryInput';
 export default function StepOneView() {
   return (
     <>
-      <h1 className='text-[28px] font-bold'>Sign Up</h1>
-      <p className='font-medium text-[14px] text-customGray '>
-        Enter your details to proceed further
-      </p>
+      <HeaderText
+        headerText='Sign Up'
+        paraText='Enter your details to proceed further'
+      />
 
       <PrimaryInput
         type='text'

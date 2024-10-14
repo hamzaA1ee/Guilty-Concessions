@@ -1,6 +1,7 @@
 //custom components imports
 
 import PrimaryButton from '@/components/Button/button';
+import HeaderText from '@/components/HeaderText';
 import PrimaryInput from '@/components/Input/PrimaryInput';
 //views imports
 
@@ -12,10 +13,10 @@ import PrimaryInput from '@/components/Input/PrimaryInput';
 export default function StepTwoView() {
   return (
     <>
-      <h1 className='text-[28px] font-bold'>Sign Up</h1>
-      <p className='font-medium text-[14px] text-customGray '>
-        Enter your details to proceed further
-      </p>
+      <HeaderText
+        headerText='Sign Up'
+        paraText='Enter your details to proceed further'
+      />
 
       <div className='flex items-center justify-evenly mt-8 mb-6 gap-4 '>
         <PrimaryInput
@@ -114,7 +115,7 @@ export default function StepTwoView() {
 
       <PrimaryButton
         text='Next >'
-        className='text-center mt-4 text-customWhite font-bold text-[14px] w-full h-[40px] bg-customPurple rounded-3xl '
+        className=' sm:mt-4 mt-20 text-customWhite  bg-customPurple rounded-3xl '
       />
     </>
   );

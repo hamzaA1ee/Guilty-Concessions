@@ -1,6 +1,7 @@
 //custom components imports
 
 import PrimaryButton from '@/components/Button/button';
+import HeaderText from '@/components/HeaderText';
 
 //views imports
 
@@ -13,11 +14,11 @@ import Link from 'next/link';
 export default function ConfirmEmailView() {
   return (
     <>
-      <h1 className='text-[28px] font-bold'>Confirm Email</h1>
-      <p className='font-medium text-[14px] text-customGray  '>
-        We have sent you a confirmation email, please check your email
-        XXXX@XXX.com and then login to your account.
-      </p>
+      <HeaderText
+        headerText='Confrirm Email'
+        paraText='  We have sent you a confirmation email, please check your email
+        XXXX@XXX.com and then login to your account.'
+      />
 
       <input
         type='text'
