@@ -17,15 +17,16 @@ export default function AuthLayout({
     <>
       <NavBarComponent />
       {children}
-      <div className='absolute top-28 right-0'>
+      <div className='w-[320px] h-[300px] absolute top-0 right-0 sm:top-28 sm:w-[350px] sm:h-[320px] '>
         <Image
           src={ovalOne}
-          width={350}
-          height={340}
-          alt='mask-group'
-        ></Image>
+          alt='bubble'
+          width={1600}
+          height={900}
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        />
       </div>
-      <div className='absolute bottom-30 left-16'>
+      <div className='absolute bottom-30 sm:left-16 left-8'>
         <Image
           src={bubbleTwo}
           width={53}
@@ -33,7 +34,7 @@ export default function AuthLayout({
           alt='bubble'
         ></Image>
       </div>
-      <div className='absolute bottom-3 left-5'>
+      <div className='absolute bottom-3 sm:left-5 left-0'>
         <Image
           src={bubbleOne}
           width={100}
@@ -41,7 +42,7 @@ export default function AuthLayout({
           alt='bubble'
         ></Image>
       </div>
-      <div className='absolute bottom-0 right-0'>
+      <div className='absolute sm:bottom-0 sm:right-0 hidden'>
         <Image
           src={bottomOval}
           width={168}

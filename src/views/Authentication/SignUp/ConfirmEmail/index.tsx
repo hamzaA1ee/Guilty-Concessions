@@ -1,12 +1,13 @@
 //custom components imports
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import PrimaryButton from '@/components/Button/button';
 
 //views imports
 
 //
 
 //next imports
+import Link from 'next/link';
 //logos imports
 
 export default function ConfirmEmailView() {
@@ -53,9 +54,10 @@ export default function ConfirmEmailView() {
           Forget Password
         </Link>
       </div>
-      <Button className='text-center mt-4 text-customWhite font-bold text-[14px] w-full h-[40px] bg-customPurple rounded-3xl '>
-        {`Login`}
-      </Button>
+      <PrimaryButton
+        text='Login'
+        className='mt-4 bg-customPurple rounded-3xl '
+      />
     </>
   );
 }

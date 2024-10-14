@@ -3,7 +3,11 @@ interface IButton {
   handleClick?: () => void;
   text: string;
 }
-export default function Button({ className, handleClick, text }: IButton) {
+export default function PrimaryButton({
+  className,
+  handleClick,
+  text,
+}: IButton) {
   return (
     <button
       onClick={handleClick || undefined}

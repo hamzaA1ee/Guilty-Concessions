@@ -1,5 +1,5 @@
 //custom components imports
-import { Button } from '@/components/ui/button';
+import PrimaryButton from '@/components/Button/button';
 import { Fragment, useRef, useState } from 'react';
 
 //views imports
@@ -74,16 +74,15 @@ export default function VerifyEmailView() {
             </form>
           </div>
 
-          <Button
-            onClick={() =>
+          <PrimaryButton
+            text='Verify'
+            handleClick={() =>
               setMsg(
                 'We have send you a verification link on your email. Please check your mail to verify your account',
               )
             }
-            className='text-center mt-4 text-customWhite font-bold text-[14px] w-full h-[40px] bg-customPurple rounded-3xl '
-          >
-            {`Verify`}
-          </Button>
+            className='bg-customPurple rounded-3xl '
+          />
         </Fragment>
       ) : (
         <p className='font-medium text-[14px] text-customGray '>{msg}</p>
