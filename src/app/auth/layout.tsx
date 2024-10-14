@@ -26,7 +26,7 @@ export default function AuthLayout({
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
         />
       </div>
-      <div className='absolute bottom-30 sm:left-16 left-8'>
+      <div className='absolute bottom-30  sm:left-16 left-8 '>
         <Image
           src={bubbleTwo}
           width={53}
@@ -34,7 +34,7 @@ export default function AuthLayout({
           alt='bubble'
         ></Image>
       </div>
-      <div className='absolute bottom-3 sm:left-5 left-0'>
+      <div className='absolute bottom-3 sm:left-5 left-0 '>
         <Image
           src={bubbleOne}
           width={100}
@@ -42,7 +42,7 @@ export default function AuthLayout({
           alt='bubble'
         ></Image>
       </div>
-      <div className='absolute sm:bottom-0 sm:right-0 hidden'>
+      <div className='absolute sm:bottom-0  sm:right-0 '>
         <Image
           src={bottomOval}
           width={168}

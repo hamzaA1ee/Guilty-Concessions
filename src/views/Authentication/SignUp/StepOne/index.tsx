@@ -2,6 +2,7 @@
 import PrimaryButton from '@/components/Button/button';
 import { Button } from '@/components/ui/button';
 import SocialButton from '@/components/Button/social-button';
+import PrimaryInput from '@/components/Input/PrimaryInput';
 
 //views imports
 
@@ -18,15 +19,15 @@ export default function StepOneView() {
         Enter your details to proceed further
       </p>
 
-      <input
+      <PrimaryInput
         type='text'
-        className='w-full h-[38px] pl-4 border-2 border-customGrayTwo mt-14 mb-14 rounded-3xl text-customGrayTwo font-medium text-[14px]'
-        placeholder='Enter Email'
+        placeHolder='Enter Email'
+        className='mt-14'
       />
 
       <PrimaryButton
         text='Sign In'
-        className=' bg-customPurple rounded-3xl '
+        className=' bg-customPurple rounded-3xl mt-14'
       />
 
       <div
@@ -37,8 +38,8 @@ export default function StepOneView() {
       </div>
 
       {/* //Social buttons defined in a component */}
-      <SocialButton isGoogle={true}  />
-      <SocialButton isFacebook={true}/>
+      <SocialButton isGoogle={true} />
+      <SocialButton isFacebook={true} />
       <SocialButton isApple={true} />
     </>
   );

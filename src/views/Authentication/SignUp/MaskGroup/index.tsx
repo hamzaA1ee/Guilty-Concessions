@@ -27,7 +27,7 @@ export default function MaskGroupView({ step }: { step: number }) {
             width={550}
             height={450}
             alt='mask-group'
-            className=''
+            
           ></Image>
         )}
       </div>

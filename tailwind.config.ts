@@ -34,6 +34,8 @@ const config: Config = {
         customPurple: '#6154A4',
         customGrayTwo: '#E9E9E9',
         customBrown: '#3A3335',
+        neutralGrey: '#25292A',
+        customText: '#262733',
       },
       width: {
         '3.5/5': '70%', // 3.5 out of 5 is 70%

@@ -1,6 +1,7 @@
 //custom components imports
 
 import PrimaryButton from '@/components/Button/button';
+import PrimaryInput from '@/components/Input/PrimaryInput';
 //views imports
 
 //
@@ -17,63 +18,81 @@ export default function StepTwoView() {
       </p>
 
       <div className='flex items-center justify-evenly mt-8 mb-6 gap-4 '>
-        <input
+        <PrimaryInput
           type='text'
-          className='w-full h-[38px]  pl-4 border-2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
-          placeholder='First Name'
+          placeHolder='First Name'
         />
-        <input
+        <PrimaryInput
           type='text'
-          className='w-full h-[38px] pl-4 border-2 border-customGrayTwo rounded-3xl text-customGrayTwo font-medium text-[14px]'
-          placeholder='Last Name'
+          placeHolder='Last Name'
         />
       </div>
-      <input
+      <PrimaryInput
         type='text'
-        className='w-full h-[38px]  pl-4 border-2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
-        placeholder='Business Name'
+        placeHolder='Business Name'
       />
 
-      <div className='flex items-center justify-evenly mt-4 gap-4 '>
-        <input
+      {/* <div className='flex items-center sm:justify-evenly mt-4 sm:flex-nowrap flex-wrap gap-4 '>
+        <PrimaryInput
           type='text'
-          className='w-[40%] h-[38px]  pl-4 border -2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
-          placeholder='Address'
+          className='w-full'
+          placeHolder='Address'
         />
-        <input
-          type='text'
-          className='w-[30%] h-[38px]  pl-4 border-2 border-customGrayTwo rounded-3xl text-customGrayTwo font-medium text-[14px]'
-          placeholder='State'
-        />
+        <div className='flex items-center bg-blue-200 justify-evenly w-ful gap-4 sm:flex-none sm:justify-normal '>
+          <PrimaryInput
+            type='text'
+            className='sm:w-[30%]'
+            placeHolder='State'
+          />
 
-        <input
+          <PrimaryInput
+            type='text'
+            className='sm:w-[40%]'
+            placeHolder='Zip Code'
+          />
+        </div>
+      </div> */}
+
+      <div className='flex items-center mt-4 flex-wrap gap-4 sm:justify-evenly sm:flex-nowrap'>
+        <PrimaryInput
           type='text'
-          className='w-[40%] h-[38px] pl-4 border-2 border-customGrayTwo rounded-3xl text-customGrayTwo font-medium text-[14px]'
-          placeholder='Zip Code'
+          className='sm:w-[40%] '
+          placeHolder='Address'
+        />
+        <div className='flex w-full gap-4 sm:flex-1'>
+          <PrimaryInput
+            type='text'
+            className='w-full'
+            placeHolder='State'
+          />
+          <PrimaryInput
+            type='text'
+            className='w-full'
+            placeHolder='Zip Code'
+          />
+        </div>
+      </div>
+
+      <div className='flex items-center justify-evenly mt-4 gap-4 flex-wrap sm:flex-nowrap '>
+        <PrimaryInput
+          type='text'
+          placeHolder='Phone Number'
+        />
+        <PrimaryInput
+          type='text'
+          placeHolder='Email'
         />
       </div>
-      <div className='flex items-center justify-evenly mt-4 gap-4 '>
-        <input
-          type='text'
-          className='w-full h-[38px]  pl-4 border -2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
-          placeholder='Phone Number'
-        />
-        <input
-          type='text'
-          className='w-full h-[38px] pl-4 border-2 border-customGrayTwo rounded-3xl text-customGrayTwo font-medium text-[14px]'
-          placeholder='Email'
-        />
-      </div>
 
-      <input
+      <PrimaryInput
         type='text'
-        className='w-full h-[38px] mt-4  pl-4 border-2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
-        placeholder='Password'
+        placeHolder='Password'
+        className='mt-4'
       />
-      <input
+      <PrimaryInput
         type='text'
-        className='w-full h-[38px] mt-4 pl-4 border -2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
-        placeholder='Confirm Password'
+        placeHolder='Confirm Password'
+        className='mt-4'
       />
 
       <div className='flex items-center mt-4'>

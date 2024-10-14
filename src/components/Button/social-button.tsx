@@ -19,7 +19,10 @@ export default function SocialButton({
     `Sign Up with ${isApple ? 'Apple' : ''} ${isGoogle ? 'Google' : ''} ${isFacebook ? 'Facebook' : ''}`.trim();
 
   return (
-    <Button onClick={handleClick} className={`${className} text-center mt-2 flex items-center text-customGray font-bold text-[14px] w-full h-[38px] border-customGray border-2 rounded-3xl `}>
+    <Button
+      onClick={handleClick}
+      className={`${className} text-center mt-2 flex items-center text-customGray font-bold text-[14px] w-full h-[38px] border-customGray border-2 rounded-3xl `}
+    >
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 640 512'
