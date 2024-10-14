@@ -21,6 +21,13 @@
   },
   "plugins": ["@typescript-eslint", "react"],
   "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+
     "max-lines-per-function": [
       "error",
       {
@@ -58,5 +65,6 @@
     "react": {
       "version": "detect"
     }
-  }
+  },
+  
 }

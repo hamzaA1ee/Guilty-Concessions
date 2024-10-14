@@ -7,14 +7,13 @@ import Image from 'next/image';
 import logo from '../../public/assets/images/Group 60.png';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { Button } from './ui/button';
 import { SideSheet } from './Sheet';
 
 //custom imports
 
 export default function NavBarComponent() {
   const pathName: string = usePathname().split('/')[2];
-  console.log(pathName);
+ 
   return (
     <div className='flex items-center justify-center fixed w-full'>
       <div className='w-[90%] sm:h-[101px] h-[200px] flex items-center justify-between'>

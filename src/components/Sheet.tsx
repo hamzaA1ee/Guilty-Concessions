@@ -1,27 +1,16 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from '@/components/ui/sheet';
+
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Link from 'next/link';
-import { FC, ReactNode, useState } from 'react';
+import { useState } from 'react';
 
 interface ISheet {
   side?: string;
   buttonText?: string;
 }
-
-export function SideSheet({ side, buttonText }: ISheet) {
+export function SideSheet({ buttonText }: ISheet) {
   const [isOpen, setIsOpen] = useState(false);
   const handleOpenClick = (): void => {
     setIsOpen(!isOpen);

@@ -1,5 +1,5 @@
 //custom components imports
-import { Button } from '@/components/ui/button';
+
 import PrimaryButton from '@/components/Button/button';
 
 //views imports

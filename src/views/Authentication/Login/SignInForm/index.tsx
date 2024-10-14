@@ -6,7 +6,6 @@ import { Fragment } from 'react';
 
 //custom imports
 import PrimaryButton from '@/components/Button/button';
-import { Button } from '@/components/ui/button';
 import SocialButton from '@/components/Button/social-button';
 
 export default function SignInFormView() {
