@@ -1,64 +1,43 @@
 //custom components imports
 
-import PrimaryButton from '@/components/Button/button';
 import HeaderText from '@/components/HeaderText';
+import PrimaryInput from '@/components/Input/PrimaryInput';
 
 //views imports
 
 //
 
 //next imports
-import Link from 'next/link';
+
 //logos imports
 
 export default function ConfirmEmailView() {
   return (
     <>
       <HeaderText
-        headerText='Confrirm Email'
-        paraText='  We have sent you a confirmation email, please check your email
-        XXXX@XXX.com and then login to your account.'
+        headerText='Indulge'
+        headerClass='text-[64px]'
       />
 
-      <input
-        type='text'
-        className='w-full h-[38px] mr-4 pl-4 mt-8 border-2 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
-        placeholder='Business Name'
-      />
-      <input
-        type='text'
-        className='w-full h-[38px] mr-4 pl-4 border-2 mt-6 border-customGrayTwo   rounded-3xl text-customGrayTwo font-medium text-[14px]'
-        placeholder='Business Name'
-      />
-
-      <div className='flex items-center justify-between mt-4'>
-        <div className='flex  items-center'>
-          <input
-            id='default-radio-1'
-            type='radio'
-            value=''
-            name='default-radio'
-            className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600'
-          />
-          <label
-            htmlFor='default-radio-1'
-            className='ms-2 text-[14px]  font-bold text-customBrown '
+      <div className='w-full max-w-sm min-w-[200px] mt-[10%]'>
+        <div className='relative'>
+          <PrimaryInput placeHolder='Enter User Mobile Number' />
+          <button
+            className='absolute right-1  top-1 rounded-full bg-customPurple py-1 px-2.5 border border-transparent text-center text-sm text-white  shadow-sm '
+            type='button'
           >
-            Remember me
-          </label>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              width={18}
+              height={20}
+              viewBox='0 0 448 512'
+              fill='white'
+            >
+              <path d='M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z' />
+            </svg>
+          </button>
         </div>
-
-        <Link
-          href={'#'}
-          className='text-customPurple font-bold text-[14px]'
-        >
-          Forget Password
-        </Link>
       </div>
-      <PrimaryButton
-        text='Login'
-        className='mt-4 bg-customPurple rounded-3xl '
-      />
     </>
   );
 }

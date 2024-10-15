@@ -17,7 +17,7 @@ export default function AuthLayout({
     <>
       <NavBarComponent />
       {children}
-      <div className='w-[320px] h-[300px] absolute top-0 right-0 sm:top-28 sm:w-[350px] sm:h-[320px] '>
+      {/* <div className='w-[320px] h-[300px] absolute top-0 right-0 sm:top-28 sm:w-[350px] sm:h-[320px] '>
         <Image
           src={ovalOne}
           alt='bubble'
@@ -49,7 +49,7 @@ export default function AuthLayout({
           height={159}
           alt='bubble'
         ></Image>
-      </div>
+      </div> */}
     </>
   );
 }

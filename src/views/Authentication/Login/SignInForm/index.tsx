@@ -7,35 +7,29 @@ import { Fragment } from 'react';
 //custom imports
 import PrimaryButton from '@/components/Button/button';
 import SocialButton from '@/components/Button/social-button';
+import PrimaryInput from '@/components/Input/PrimaryInput';
+import HeaderText from '@/components/HeaderText';
 
 export default function SignInFormView() {
   return (
     <Fragment>
-      <h1 className='text-[28px] font-bold'>Sign In</h1>
-      <p className='font-medium text-[14px] text-customGray '>
-        Enter your details to proceed further
-      </p>
-
-      <input
-        type='text'
-        className='w-full h-[38px] pl-4 border-2 border-customGray mt-8 rounded-3xl text-customGray font-medium text-[14px]'
-        placeholder='Enter Email'
+      <HeaderText
+        headerText='Sign In'
+        paraText='Enter your details to proceed further'
       />
-      <input
-        type='text'
-        className='w-full h-[38px] pl-4 border-2 border-customGray mt-4  rounded-3xl text-customGray font-medium text-[14px]'
-        placeholder='Enter Password'
+
+      <PrimaryInput
+        className='mt-8'
+        placeHolder='Enter Email'
+      />
+      <PrimaryInput
+        className=' mt-4'
+        placeHolder='Enter Password'
       />
 
       <div className='flex items-center justify-between mt-6'>
         <div className='flex  items-center'>
-          <input
-            id='default-radio-1'
-            type='radio'
-            value=''
-            name='default-radio'
-            className='w-4 h-4 text-blue-600 cursor-pointer bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600'
-          />
+          <PrimaryInput isRadio={true} />
           <label
             htmlFor='default-radio-1'
             className='ms-2 text-[14px]  font-bold text-customBrown '

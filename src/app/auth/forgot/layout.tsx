@@ -12,7 +12,7 @@ export default function AuthLayout({
           {' '}
           {/**lg:ml-32 was being used for adjusting the image to the end */}
           <div className={`w-full h-3/4 flex justify-center  `}>
-            <div className='w-4/5  '>
+            <div className='w-[70%]  '>
               {/* <SignInFormView /> */}
               {children}
             </div>

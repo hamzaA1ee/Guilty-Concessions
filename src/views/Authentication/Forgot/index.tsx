@@ -11,7 +11,7 @@ import NewPasswordView from './NewPassword';
 //image imports
 
 const ForgotPasswordView = () => {
-  const [step] = useState<number>(1);
+  const [step] = useState<number>(2);
   return (
     <Fragment>
       {step == 1 && <ResetPasswordView />}

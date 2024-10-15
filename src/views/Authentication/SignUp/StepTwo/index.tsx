@@ -19,19 +19,10 @@ export default function StepTwoView() {
       />
 
       <div className='flex items-center justify-evenly mt-8 mb-6 gap-4 '>
-        <PrimaryInput
-          type='text'
-          placeHolder='First Name'
-        />
-        <PrimaryInput
-          type='text'
-          placeHolder='Last Name'
-        />
+        <PrimaryInput placeHolder='First Name' />
+        <PrimaryInput placeHolder='Last Name' />
       </div>
-      <PrimaryInput
-        type='text'
-        placeHolder='Business Name'
-      />
+      <PrimaryInput placeHolder='Business Name' />
 
       {/* <div className='flex items-center sm:justify-evenly mt-4 sm:flex-nowrap flex-wrap gap-4 '>
         <PrimaryInput
@@ -56,18 +47,15 @@ export default function StepTwoView() {
 
       <div className='flex items-center mt-4 flex-wrap gap-4 sm:justify-evenly sm:flex-nowrap'>
         <PrimaryInput
-          type='text'
           className='sm:w-[40%] '
           placeHolder='Address'
         />
         <div className='flex w-full gap-4 sm:flex-1'>
           <PrimaryInput
-            type='text'
             className='w-full'
             placeHolder='State'
           />
           <PrimaryInput
-            type='text'
             className='w-full'
             placeHolder='Zip Code'
           />
@@ -75,23 +63,15 @@ export default function StepTwoView() {
       </div>
 
       <div className='flex items-center justify-evenly mt-4 gap-4 flex-wrap sm:flex-nowrap '>
-        <PrimaryInput
-          type='text'
-          placeHolder='Phone Number'
-        />
-        <PrimaryInput
-          type='text'
-          placeHolder='Email'
-        />
+        <PrimaryInput placeHolder='Phone Number' />
+        <PrimaryInput placeHolder='Email' />
       </div>
 
       <PrimaryInput
-        type='text'
         placeHolder='Password'
         className='mt-4'
       />
       <PrimaryInput
-        type='text'
         placeHolder='Confirm Password'
         className='mt-4'
       />

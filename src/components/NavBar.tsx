@@ -4,7 +4,7 @@
 import Image from 'next/image';
 
 //Image imports
-import logo from '../../public/assets/images/Group 60.png';
+import logo from '@/../public/assets/images/Group 60.png';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { SideSheet } from './Sheet';
@@ -13,7 +13,6 @@ import { SideSheet } from './Sheet';
 
 export default function NavBarComponent() {
   const pathName: string = usePathname().split('/')[2];
-
   return (
     <div className='flex items-center justify-center fixed w-full'>
       <div className='w-[90%] sm:h-[101px] h-[200px] flex items-center justify-between'>
@@ -30,7 +29,7 @@ export default function NavBarComponent() {
         <div className='hidden sm:block'>
           {pathName !== 'login' && (
             <Link
-              href='./login'
+              href={pathName?.includes('auth') ? '/login' : '/auth/login'}
               className='inline-flex items-center justify-center w-[127px] h-[37px] font-bold rounded-2xl  shadow-both-custom'
             >
               LOGIN

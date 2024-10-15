@@ -6,7 +6,8 @@ import Image from 'next/image';
 import stepOneImg from '@/../public/assets/images/stepOneImg.png';
 
 import bitmap from '@/../public/assets/images/Bitmap.png';
-import bitmapTwo from '@/../../public/assets/images/bitmapTwo.png';
+import bitmapTwo from '@/../public/assets/images/bitmapTwo.png';
+import bitmapThree from '@/../public/assets/images/bitmapThree.png';
 export default function MaskGroupView({ step }: { step: number }) {
   return (
     <div>
@@ -23,7 +24,9 @@ export default function MaskGroupView({ step }: { step: number }) {
           ></Image>
         ) : (
           <Image
-            src={step == 2 ? bitmap : bitmapTwo}
+            src={
+              (step == 3 && bitmapThree) || (step == 2 && bitmap) || bitmapTwo
+            }
             width={550}
             height={450}
             alt='mask-group'

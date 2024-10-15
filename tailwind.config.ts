@@ -36,6 +36,7 @@ const config: Config = {
         customBrown: '#3A3335',
         neutralGrey: '#25292A',
         customText: '#262733',
+        customTextTwo:'#292A34'
       },
       width: {
         '3.5/5': '70%', // 3.5 out of 5 is 70%

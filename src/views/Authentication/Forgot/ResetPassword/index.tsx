@@ -1,3 +1,6 @@
+import PrimaryButton from '@/components/Button/button';
+import HeaderText from '@/components/HeaderText';
+import PrimaryInput from '@/components/Input/PrimaryInput';
 import { Button } from '@/components/ui/button';
 
 import { Fragment } from 'react';
@@ -5,20 +8,20 @@ import { Fragment } from 'react';
 export default function ResetPasswordView() {
   return (
     <Fragment>
-      <h1 className='text-[28px] font-bold'>Forgot Password</h1>
-      <p className='font-medium text-[14px] text-customGray '>
-        Enter email associated with your account
-      </p>
-
-      <input
-        type='text'
-        className='w-full h-[38px] pl-4 border -2 border-customGrayTwo mt-8 rounded-3xl text-customGrayTwo font-medium text-[14px]'
-        placeholder='Enter Email'
+      <HeaderText
+        headerText='Forgot Password'
+        paraText='Enter email associated with your account'
       />
 
-      <Button className='text-center mt-6 text-customWhite font-bold text-[14px] w-full h-[38px] bg-customPurple rounded-3xl '>
-        Continue
-      </Button>
+      <PrimaryInput
+        className=' mt-8'
+        placeHolder='Enter Email'
+      />
+
+      <PrimaryButton
+        text='Continue'
+        className='mt-6 bg-customPurple rounded-3xl '
+      />
     </Fragment>
   );
 }
