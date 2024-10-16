@@ -24,14 +24,14 @@ export default function DashboardInfo() {
               </p>
               <PrimaryButton
                 text='Add Funds'
-                className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold text-black rounded-3xl border-2  border-customGrayTwo'
+                className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold text-customTextTwo rounded-3xl border-2  border-customGrayTwo'
               />
             </div>
             <div className='flex flex-col gap-1 items-center'>
               <AddToCart />
               <PrimaryButton
                 text='Checkout'
-                className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold text-black rounded-3xl border-2  border-customGrayTwo'
+                className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold text-customTextTwo rounded-3xl border-2  border-customGrayTwo'
               />
             </div>
           </div>

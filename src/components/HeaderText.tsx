@@ -2,7 +2,6 @@ interface IHeader {
   headerText: string;
   paraText?: string;
   headerClass?: string;
-  
 }
 
 export default function HeaderText({

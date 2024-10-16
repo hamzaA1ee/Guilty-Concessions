@@ -12,7 +12,7 @@ export default function DashboardView() {
       </div>
 
       <div className='w-[90%]  text-[24px] flex flex-col gap-4 sm:items-start items-center  justify-center'>
-        <p className='text-customGray'> Featured Gift Cards </p>
+        <p className='text-customGray '> Featured Gift Cards </p>
         <div className='flex items-center sm:justify-start justify-center w-full gap-4  flex-wrap'>
           {Array(6)
             .fill(null)
