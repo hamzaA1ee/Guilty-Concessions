@@ -1,14 +1,12 @@
 interface IPrimary {
   placeHolder?: string;
   className?: string;
-
   isRadio?: boolean;
 }
 
 export default function PrimaryInput({
   placeHolder,
   className,
-
   isRadio,
 }: IPrimary) {
   return (

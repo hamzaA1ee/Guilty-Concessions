@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${mont.className} ${inter.className} bg-customBack h-screen overflow-y-hidden`}
+        className={`${mont.className} ${inter.className} bg-customBack h-screen `}
       >
         <NavBarComponent />
         <Providers>{children}</Providers>
@@ -55,7 +55,7 @@ export default function RootLayout({
             alt='bubble'
           ></Image>
         </div>
-        <div className='absolute bottom-3 sm:left-5 left-0 '>
+        <div className='absolute bottom-3 sm:left-5 left-0  '>
           <Image
             src={bubbleOne}
             width={100}
@@ -63,7 +63,7 @@ export default function RootLayout({
             alt='bubble'
           ></Image>
         </div>
-        <div className='absolute sm:bottom-0  sm:right-0 '>
+        <div className='absolute sm:bottom-0  sm:right-0 hidden '>
           <Image
             src={bottomOval}
             width={168}

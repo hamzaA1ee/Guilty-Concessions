@@ -20,7 +20,6 @@ export default function StepOneView() {
       />
 
       <PrimaryInput
-       
         placeHolder='Enter Email'
         className='mt-14'
       />

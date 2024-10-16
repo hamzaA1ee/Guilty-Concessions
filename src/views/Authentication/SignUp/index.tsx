@@ -23,7 +23,7 @@ const SignUpView = () => {
         {' '}
         {/**lg:ml-32 was being used for adjusting the image to the end */}
         <div className={`w-full h-3/4 flex justify-center  `}>
-          <div className={`w-[70%]  ${step ==3 && 'sm:mt-[20%]'}`}>
+          <div className={`w-[70%]  ${step == 3 && 'sm:mt-[20%]'}`}>
             {' '}
             {/*just change the forms here from now on.*/}
             {step == 1 && <StepOneView />}
