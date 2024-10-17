@@ -32,11 +32,16 @@ const config: Config = {
         customGray: '#908E8E',
         customWhite: '#FFFFFF',
         customPurple: '#6154A4',
+        customPurpleTwo:'#6D62AB',
         customGrayTwo: '#E9E9E9',
+        customGrayThree: '#D8D8D8',
+        customGrayFour: '#EDEDED',
         customBrown: '#3A3335',
         neutralGrey: '#25292A',
         customText: '#262733',
-        customTextTwo:'#292A34'
+        customTextTwo: '#292A34',
+        customTextThree: '#4A4A4A',
+        customPink: '#FAF0F8',
       },
       width: {
         '3.5/5': '70%', // 3.5 out of 5 is 70%

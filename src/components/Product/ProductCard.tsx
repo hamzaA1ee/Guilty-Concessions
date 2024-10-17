@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 //assets imports
 import ps from '@/../public/assets/images/ps.jpg';
-import AddToCart from './AddToCart';
+import AddToCart from '../AddToCart';
 
 export default function ProductCard() {
   return (

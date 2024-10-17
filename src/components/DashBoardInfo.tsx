@@ -6,11 +6,13 @@ import HeaderText from './HeaderText';
 export default function DashboardInfo() {
   return (
     <>
+      {/* for the large view */}
       <div className='h-[25%] w-full md:flex items-center justify-between  hidden '>
         <div>
           <HeaderText
             headerText='Stacy Mathew'
             paraText='Your Share Link:'
+            linkSrc='guiltyconsessions.com/stacymathew'
           />
         </div>
         <div className='flex flex-col gap-4 h-full  justify-center '>
@@ -24,14 +26,16 @@ export default function DashboardInfo() {
               </p>
               <PrimaryButton
                 text='Add Funds'
-                className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold text-customTextTwo rounded-3xl border-2  border-customGrayTwo'
+                className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold  rounded-3xl border-2  border-customGrayTwo'
+                fontColor='customTextTwo'
               />
             </div>
             <div className='flex flex-col gap-1 items-center'>
               <AddToCart />
               <PrimaryButton
                 text='Checkout'
-                className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold text-customTextTwo rounded-3xl border-2  border-customGrayTwo'
+                className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold text-black rounded-3xl border-2  border-customGrayTwo'
+                fontColor='customTextTwo'
               />
             </div>
           </div>
@@ -43,6 +47,7 @@ export default function DashboardInfo() {
           />
         </div>
       </div>
+      {/* for below medium and large screens */}
       <div className='w-full h-auto flex flex-col items-start gap-1 md:hidden '>
         <HeaderText
           headerText='Stacy Mathew'
@@ -66,12 +71,13 @@ export default function DashboardInfo() {
         </div>
         <div className='flex items-center justify-center gap-2 my-2'>
           <PrimaryButton
+          
             text='Add Funds'
-            className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold text-black rounded-3xl border-2  border-customGrayTwo'
+            className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold text-customTextTwo rounded-3xl border-2  border-customGrayTwo'
           />
           <PrimaryButton
             text='Checkout'
-            className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold text-black rounded-3xl border-2  border-customGrayTwo'
+            className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold text-customTextTwo  rounded-3xl border-2  border-customGrayTwo'
           />
           <AddToCart />
         </div>

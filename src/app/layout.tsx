@@ -6,6 +6,7 @@ import Image from 'next/image';
 //fonts imports
 import { Inter } from 'next/font/google';
 import { Montserrat } from 'next/font/google';
+
 //providers imports
 import { Providers } from '@/providers';
 
@@ -19,7 +20,7 @@ import ovalOne from '@/../../public/assets/images/Img.png';
 import bottomOval from '@/../../public/assets/images/Oval Copy.png';
 
 const inter = Inter({ subsets: ['latin'] });
-const mont = Montserrat({ subsets: ['latin'] });
+const mont = Montserrat({ subsets: ['latin'], display: 'swap' });
 
 export const metadata: Metadata = {
   title: 'Zen Guilty Concessions',
