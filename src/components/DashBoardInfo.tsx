@@ -71,13 +71,14 @@ export default function DashboardInfo() {
         </div>
         <div className='flex items-center justify-center gap-2 my-2'>
           <PrimaryButton
-          
             text='Add Funds'
-            className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold text-customTextTwo rounded-3xl border-2  border-customGrayTwo'
+            fontColor='customTextTwo'
+            className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold  rounded-3xl border-2  border-customGrayTwo'
           />
           <PrimaryButton
             text='Checkout'
-            className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold text-customTextTwo  rounded-3xl border-2  border-customGrayTwo'
+            fontColor='customTextTwo'
+            className='w-[30%] h-[6.5%] min-w-[127px] min-h-[36px] text-[12px] font-bold   rounded-3xl border-2  border-customGrayTwo'
           />
           <AddToCart />
         </div>

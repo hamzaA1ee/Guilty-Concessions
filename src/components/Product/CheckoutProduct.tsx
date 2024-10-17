@@ -37,12 +37,12 @@ export default function CheckoutProduct() {
         <div className='flex items-center w-full h-full justify-between '>
           <div className='w-[100px]  h-[32px] rounded-2xl border-2 border-customPurpleTwo flex items-center justify-between'>
             <PrimaryButton
-              className='text-[16px] font-bold text-customTextThree bg-customGrayThree w-[23%] h-[28px] rounded-l-full'
+              className='text-[16px] font-bold text-customTextThree bg-customGrayThree w-[26px] h-full rounded-l-full'
               text='-'
             />
             <p className='text-[12px]'>1</p>
             <PrimaryButton
-              className='text-[16px] font-bold text-customTextThree bg-customGrayThree w-[23%] h-[28px] rounded-r-full'
+              className='text-[16px] font-bold text-customTextThree bg-customGrayThree w-[26px] h-full rounded-r-full'
               text='+'
             />
           </div>

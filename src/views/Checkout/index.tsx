@@ -10,10 +10,9 @@ export default function CheckoutView() {
       </div>
 
       {/* below comes all the products */}
-      <div className=' w-[85%] h-full flex lg:flex-row flex-col items-center justify-center '>
+      <div className='w-[95%] sm:w-[85%] h-auto flex lg:flex-row flex-col items-center justify-center '>
         {' '}
-        
-        <div className='xl:w-full lg:w-[60%]  w-full gap-8 grid xl:grid-cols-2 grid-cols-1  place-items-center overflow-y-auto  '>
+        <div className='xl:w-full h-full lg:w-[60%] w-full  lg:max-h-[500px] gap-8 grid xl:grid-cols-2 grid-cols-1 place-items-center  lg:overflow-y-auto'>
           <CheckoutProduct />
           <CheckoutProduct />
           <CheckoutProduct />
