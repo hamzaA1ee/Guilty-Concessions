@@ -7,7 +7,7 @@ import AddToCart from '../AddToCart';
 
 export default function ProductCard() {
   return (
-    <div className='w-[200px] h-[250px] gap-2   rounded border-2 flex flex-col items-center justify-center bg-white  border-customGrayTwo '>
+    <div className={`w-[200px] h-[250px] gap-2   rounded border-2 flex flex-col items-center justify-center bg-white  border-customGrayTwo `}>
       <div className='border-2 border-customGrayTwo w-[90%] h-[180px] relative'>
         <svg
           xmlns='http://www.w3.org/2000/svg'

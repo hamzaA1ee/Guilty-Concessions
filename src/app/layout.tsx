@@ -4,7 +4,7 @@ import '@/styles/globals.css';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 //fonts imports
-import { Inter } from 'next/font/google';
+import { Inter, Lato } from 'next/font/google';
 import { Montserrat } from 'next/font/google';
 
 //providers imports
@@ -21,6 +21,11 @@ import bottomOval from '@/../../public/assets/images/Oval Copy.png';
 
 const inter = Inter({ subsets: ['latin'] });
 const mont = Montserrat({ subsets: ['latin'], display: 'swap' });
+const lato = Lato({
+  weight: ['700', '400', '300'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Zen Guilty Concessions',
@@ -35,9 +40,8 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${mont.className} ${inter.className} bg-customBack h-screen `}
+        className={`${mont.className} ${inter.className}  bg-customBack h-screen `}
       >
-        <NavBarComponent />
         <Providers>{children}</Providers>
         <div className='w-[320px] h-[300px] absolute top-0 right-0 sm:top-28 sm:w-[350px] sm:h-[320px] '>
           <Image

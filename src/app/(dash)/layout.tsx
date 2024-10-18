@@ -1,5 +1,6 @@
 //custom components imports
 import DashboardInfo from '@/components/DashBoardInfo';
+import NavBarComponent from '@/components/NavBar';
 
 //next imports
 export default function AuthLayout({
@@ -8,6 +9,8 @@ export default function AuthLayout({
   children: React.ReactNode;
 }) {
   return (
+    <>
+    <NavBarComponent/>
     <div className='w-full h-full flex items-end  justify-center '>
       <div className='w-[90%] h-[85%] gap-2 flex flex-col items-center '>
         {/* //below is the dashboardInfo component */}
@@ -19,5 +22,6 @@ export default function AuthLayout({
         </div>
       </div>
     </div>
+    </>
   );
 }

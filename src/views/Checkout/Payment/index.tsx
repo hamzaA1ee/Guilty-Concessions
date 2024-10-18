@@ -81,8 +81,7 @@ export default function PaymentView() {
         </div>
         <PrimaryButton
           text='Pay'
-          width='80%'
-          className='rounded-3xl bg-customPurple'
+          className='rounded-3xl bg-customPurple font-normal'
         />
       </div>
     </>

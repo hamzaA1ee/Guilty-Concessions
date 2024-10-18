@@ -21,6 +21,7 @@ const config: Config = {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         mont: ['Montserrat', 'sans-serif'],
+        lato: ['Lato', 'sans-serif'],
       },
       boxShadow: {
         'both-custom':
@@ -36,14 +37,15 @@ const config: Config = {
         customGrayTwo: '#E9E9E9',
         customGrayThree: '#D8D8D8',
         customGrayFour: '#EDEDED',
-        customGrayFive:'#A3A3A3',
-        customTextFive:'#565656',
+        customGrayFive: '#A3A3A3',
+        customTextFive: '#565656',
         customBrown: '#3A3335',
         neutralGrey: '#25292A',
         customText: '#262733',
         customTextTwo: '#292A34',
         customTextThree: '#4A4A4A',
         customPink: '#FAF0F8',
+        customTextSix: '#9B9B9B',
       },
       width: {
         '3.5/5': '70%', // 3.5 out of 5 is 70%

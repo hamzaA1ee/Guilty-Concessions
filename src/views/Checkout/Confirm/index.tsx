@@ -20,12 +20,10 @@ export default function ConfirmCheckoutView() {
       />
 
       <div className='sm:w-[80%] w-full'>
-        
         <PrimaryButton
-          className='rounded-3xl bg-customPurple'
+          className='rounded-3xl bg-customPurple font-normal'
           text='Proceed to Checkout'
         />
-        
       </div>
     </>
   );
