@@ -14,7 +14,7 @@ import { SideSheet } from './Sheet';
 export default function NavBarComponent() {
   const pathName: string = usePathname().split('/')[2];
   return (
-    <div className='flex items-center justify-center fixed w-full'>
+    <div className='flex items-center justify-start sm:justify-center fixed w-full'>
       <div className='w-[90%] sm:h-[101px] h-[200px] flex items-center justify-between'>
         <div className='max-w-[309px] h-[38px] flex items-center justify-around'>
           <SideSheet />

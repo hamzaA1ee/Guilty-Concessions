@@ -14,7 +14,7 @@ export default function AuthLayout({
         <DashboardInfo />
 
         {/* below is the whole view where all the cards and search bar is placed below div */}
-        <div className='h-full w-full z-10 sm:bg-[#F9F9F9] bg-white border-2 border-[#707070] sm:border-none overflow-y-auto  flex flex-col gap-8 items-center custom-scrollbar'>
+        <div className='h-full w-full z-10 sm:bg-[#F9F9F9] bg-white border-2 border-[#707070]  overflow-y-auto  flex flex-col gap-8 items-center custom-scrollbar'>
           {children}
         </div>
       </div>
