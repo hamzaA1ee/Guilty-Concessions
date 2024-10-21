@@ -10,9 +10,6 @@ import { Montserrat } from 'next/font/google';
 //providers imports
 import { Providers } from '@/providers';
 
-//components imports
-import NavBarComponent from '@/components/NavBar';
-
 //assets imports
 import bubbleOne from '@/../../public/assets/images/Oval Copy 2.png';
 import bubbleTwo from '@/../../public/assets/images/Oval Copy 3.png';
@@ -43,7 +40,7 @@ export default function RootLayout({
         className={`${mont.className} ${inter.className}  bg-customBack h-screen `}
       >
         <Providers>{children}</Providers>
-        <div className='w-[320px] h-[300px] absolute top-0 right-0 sm:top-28 sm:w-[350px] sm:h-[320px] '>
+        {/* <div className='w-[320px] h-[300px] absolute top-0 right-0 sm:top-28 sm:w-[350px] sm:h-[320px] '>
           <Image
             src={ovalOne}
             alt='bubble'
@@ -75,7 +72,7 @@ export default function RootLayout({
             height={159}
             alt='bubble'
           ></Image>
-        </div>
+        </div> */}
       </body>
     </html>
   );

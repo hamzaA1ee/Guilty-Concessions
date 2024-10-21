@@ -1,23 +1,23 @@
-  import NavBarComponent from '@/components/NavBar';
+import NavBarComponent from '@/components/NavBar';
 
-  //next Imports
-  import Image from 'next/image';
+//next Imports
+import Image from 'next/image';
 
-  //images imports
-  import bubbleOne from '../../../public/assets/images/Oval Copy 2.png';
-  import bubbleTwo from '../../../public/assets/images/Oval Copy 3.png';
-  import ovalOne from '../../../public/assets/images/Img.png';
-  import bottomOval from '../../../public/assets/images/Oval Copy.png';
-  export default function AuthLayout({
-    children,
-  }: {
-    children: React.ReactNode;
-  }) {
-    return (
-      <>
-        <NavBarComponent />
-        {children}
-        {/* <div className='w-[320px] h-[300px] absolute top-0 right-0 sm:top-28 sm:w-[350px] sm:h-[320px] '>
+//images imports
+import bubbleOne from '../../../public/assets/images/Oval Copy 2.png';
+import bubbleTwo from '../../../public/assets/images/Oval Copy 3.png';
+import ovalOne from '../../../public/assets/images/Img.png';
+import bottomOval from '../../../public/assets/images/Oval Copy.png';
+export default function AuthLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <>
+      <NavBarComponent />
+      {children}
+      {/* <div className='w-[320px] h-[300px] absolute top-0 right-0 sm:top-28 sm:w-[350px] sm:h-[320px] '>
           <Image
             src={ovalOne}
             alt='bubble'
@@ -50,6 +50,6 @@
             alt='bubble'
           ></Image>
         </div> */}
-      </>
-    );
-  }
+    </>
+  );
+}

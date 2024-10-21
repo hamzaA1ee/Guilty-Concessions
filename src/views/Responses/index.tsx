@@ -30,7 +30,13 @@ export default function ResponseViews({
             {headerText}
           </h1>
           <p className='text-customGray text-[14px] text-center '>{paraText}</p>
-          {buttonText && <PrimaryButton text={buttonText} width='80%' className='rounded-3xl bg-customPurple' />}
+          {buttonText && (
+            <PrimaryButton
+              text={buttonText}
+              width='80%'
+              className='rounded-3xl bg-customPurple'
+            />
+          )}
         </div>
       </div>
     </div>
