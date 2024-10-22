@@ -1,4 +1,5 @@
 //custom components imports
+import BubbleGroup from '@/components/BubbleGroup';
 import DashboardInfo from '@/components/DashBoardInfo';
 import NavBarComponent from '@/components/NavBar';
 
@@ -22,6 +23,7 @@ export default function AuthLayout({
           </div>
         </div>
       </div>
+      <BubbleGroup />
     </>
   );
 }

@@ -18,7 +18,9 @@ export default function SavedProduct({
         <div className='w-[69px] h-[76px] bg-customGrayFour'></div>
         <div className='w-full sm:w-[250px] flex flex-col items-start'>
           <p className='text-[14px]'>{name}</p>
-          <p className='text-[12px] text-customTextThree font-light'>{priceOrTime}</p>
+          <p className='text-[12px] text-customTextThree font-light'>
+            {priceOrTime}
+          </p>
         </div>
       </div>
       {isNotification && (
