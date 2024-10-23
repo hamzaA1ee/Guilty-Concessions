@@ -5,6 +5,8 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Link from 'next/link';
 import { useState } from 'react';
+import ProfileAvatar from './ProfileAvatar';
+import HeaderText from './HeaderText';
 
 interface ISheet {
   side?: string;
@@ -15,6 +17,9 @@ export function SideSheet({ buttonText }: ISheet) {
   const handleOpenClick = (): void => {
     setIsOpen(!isOpen);
   };
+  const links={
+    
+  }
   return (
     <div className='grid grid-cols-1 gap-2'>
       <Sheet
@@ -43,7 +48,12 @@ export function SideSheet({ buttonText }: ISheet) {
           className='bg-customBack'
         >
           <div className='grid gap-4 py-4 mt-10'>
-            <div className='flex justify-start h-[39px] items-center pl-5 gap-4'>
+            <div className='flex flex-col h-[39px] items-start pl-5 gap-4'>
+              <div className='flex items-center gap-2'>
+                <ProfileAvatar/>
+                <HeaderText headerText='Stacy Mathew' headerClass='text-[18px]'/>
+              </div>
+              <hr className="h-px w-full bg-gray-400 border-1 dark:bg-gray-700"/>
               <Link
                 onClick={handleOpenClick}
                 href='./login'
@@ -51,6 +61,43 @@ export function SideSheet({ buttonText }: ISheet) {
               >
                 Login
               </Link>
+              <Link
+                onClick={handleOpenClick}
+                href='./login'
+                className='font-normal  text-[16px] text-neutralGrey'
+              >
+                My Coupons
+              </Link>
+
+              <Link
+                onClick={handleOpenClick}
+                href='./login'
+                className='font-normal  text-[16px] text-neutralGrey'
+              >
+                Notifications
+              </Link>
+              <Link
+                onClick={handleOpenClick}
+                href='./login'
+                className='font-normal  text-[16px] text-neutralGrey'
+              >
+                Payment Methods
+              </Link>
+              <Link
+                onClick={handleOpenClick}
+                href='./login'
+                className='font-normal  text-[16px] text-neutralGrey'
+              >
+                Order History
+              </Link>
+              <Link
+                onClick={handleOpenClick}
+                href='./login'
+                className='font-normal  text-[16px] text-neutralGrey'
+              >
+                Change Password
+              </Link>
+
             </div>
           </div>
         </SheetContent>

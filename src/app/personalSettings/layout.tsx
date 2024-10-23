@@ -18,9 +18,7 @@ export default function AuthLayout({
               paraText='Manage your profile, password and more.'
             />
           </div>
-          <div className='w-full h-full flex mt-[2%] lg:gap-8'>
-            {children}
-          </div>
+          <div className='w-full h-full flex mt-[2%] lg:gap-8'>{children}</div>
         </div>
       </div>
       <BubbleGroup />

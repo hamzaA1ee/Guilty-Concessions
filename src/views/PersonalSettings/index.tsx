@@ -2,10 +2,11 @@
 import AccountsNavigation from '@/components/AccountsNavigation';
 import { useState } from 'react';
 import ProfileAndSecurityView from './ProfileAndSecurity';
-import Notifications from './Notifications';
-import PaymentMethod from './PaymentMethod';
-import OrderHistory from './OrderHistory';
-import ChangePassword from './ChangePassword';
+import NotificationsView from './Notifications';
+import PaymentMethodView from './PaymentMethod';
+import OrderHistoryView from './OrderHistory';
+import ChangePasswordView from './ChangePassword';
+import HeaderText from '@/components/HeaderText';
 
 export default function PersonalSettingsView() {
   const buttons: string[] = [
@@ -32,12 +33,13 @@ export default function PersonalSettingsView() {
         ))}
       </div>
       {/* here comes the sub tabs */}
-      <div className='md:w-full lg:w-[50%]   '>
+      <div className='w-full lg:w-[50%]   '>
+      <HeaderText headerText={tab} />
         {tab === 'Profile & Security' && <ProfileAndSecurityView />}
-        {tab === 'Notifications' && <Notifications />}
-        {tab == 'Payment Method' && <PaymentMethod />}
-        {tab == 'Order History' && <OrderHistory />}
-        {tab == 'Change Password' && <ChangePassword />}
+        {tab === 'Notifications' && <NotificationsView />}
+        {tab == 'Payment Method' && <PaymentMethodView />}
+        {tab == 'Order History' && <OrderHistoryView />}
+        {tab == 'Change Password' && <ChangePasswordView/>}
       </div>
     </>
   );

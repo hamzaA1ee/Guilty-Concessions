@@ -8,10 +8,10 @@ interface IProfileAvatar {
 }
 export default function ProfileAvatar({ src, height, width }: IProfileAvatar) {
   return (
-    <Avatar >
+    <Avatar>
       <AvatarImage
-      width={width || 28}
-      height={height || 28}
+        width={width || 28}
+        height={height || 28}
         src={src || 'https://github.com/shadcn.png'}
         alt='@shadcn'
       />
