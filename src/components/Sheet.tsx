@@ -17,9 +17,7 @@ export function SideSheet({ buttonText }: ISheet) {
   const handleOpenClick = (): void => {
     setIsOpen(!isOpen);
   };
-  const links={
-    
-  }
+  const links = {};
   return (
     <div className='grid grid-cols-1 gap-2'>
       <Sheet
@@ -50,10 +48,13 @@ export function SideSheet({ buttonText }: ISheet) {
           <div className='grid gap-4 py-4 mt-10'>
             <div className='flex flex-col h-[39px] items-start pl-5 gap-4'>
               <div className='flex items-center gap-2'>
-                <ProfileAvatar/>
-                <HeaderText headerText='Stacy Mathew' headerClass='text-[18px]'/>
+                <ProfileAvatar />
+                <HeaderText
+                  headerText='Stacy Mathew'
+                  headerClass='text-[18px]'
+                />
               </div>
-              <hr className="h-px w-full bg-gray-400 border-1 dark:bg-gray-700"/>
+              <hr className='h-px w-full bg-gray-400 border-1 dark:bg-gray-700' />
               <Link
                 onClick={handleOpenClick}
                 href='./login'
@@ -97,7 +98,6 @@ export function SideSheet({ buttonText }: ISheet) {
               >
                 Change Password
               </Link>
-
             </div>
           </div>
         </SheetContent>

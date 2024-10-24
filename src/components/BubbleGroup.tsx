@@ -12,14 +12,14 @@ export default function BubbleGroup() {
     <>
       {' '}
       <div className='w-[320px] h-[300px] absolute top-0 right-0 sm:top-28 sm:hidden '>
-          <Image
-            src={ovalOne}
-            alt='bubble'
-            width={1600}
-            height={900}
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          />
-        </div>
+        <Image
+          src={ovalOne}
+          alt='bubble'
+          width={1600}
+          height={900}
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        />
+      </div>
       <div className='absolute bottom-30  sm:left-16 left-8 '>
         <Image
           src={bubbleTwo}

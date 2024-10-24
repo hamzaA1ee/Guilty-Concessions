@@ -1,5 +1,6 @@
 import PrimaryInput from '@/components/Input/PrimaryInput';
 import ProductCard from '@/components/Product/ProductCard';
+import ProductContainer from '@/components/ProductContainer';
 
 export default function DashboardView() {
   return (
@@ -11,16 +12,7 @@ export default function DashboardView() {
         />
       </div>
 
-      <div className='w-[90%] font-lato  text-[24px] flex flex-col gap-4 sm:items-start items-center  justify-center'>
-        <p className='text-customGray '> Featured Gift Cards </p>
-        <div className='flex items-center  sm:justify-start justify-center w-full gap-4  flex-wrap'>
-          {Array(6)
-            .fill(null)
-            .map((_, index) => (
-              <ProductCard key={index} />
-            ))}
-        </div>
-      </div>
+      <ProductContainer isMyCoupon={false}/>
     </>
   );
 }

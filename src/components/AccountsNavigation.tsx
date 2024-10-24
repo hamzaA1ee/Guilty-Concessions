@@ -16,7 +16,7 @@ export default function AccountsNavigation({
       )}
       <button
         onClick={() => handleClick(text)}
-        className={`text-[14px] md:text-[19px] ${text=='Logout' && 'text-red-500'}`}
+        className={`text-[14px] md:text-[19px] ${text == 'Logout' && 'text-red-500'}`}
       >
         {text}
       </button>

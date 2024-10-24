@@ -7,6 +7,7 @@ import PaymentMethodView from './PaymentMethod';
 import OrderHistoryView from './OrderHistory';
 import ChangePasswordView from './ChangePassword';
 import HeaderText from '@/components/HeaderText';
+import ProductContainer from '@/components/ProductContainer';
 
 export default function PersonalSettingsView() {
   const buttons: string[] = [
@@ -22,7 +23,7 @@ export default function PersonalSettingsView() {
 
   return (
     <>
-      <div className='hidden mt-5 w-[50%] md:w-[50%] lg:w-[30%] h-full   sm:flex flex-col items-start gap-3'>
+      <div className='hidden mt-5 w-[50%] md:w-[50%] lg:w-[30%]  sm:flex flex-col items-start gap-3'>
         {buttons.map((buttonText, index) => (
           <AccountsNavigation
             key={index}
@@ -33,13 +34,16 @@ export default function PersonalSettingsView() {
         ))}
       </div>
       {/* here comes the sub tabs */}
-      <div className='w-full lg:w-[50%]   '>
-      <HeaderText headerText={tab} />
+      <div
+        className={`w-full   ${tab == 'My Coupons' ? 'w-full bg-[#F9F9F9] z-50 pl-4 overflow-y-auto h-[470px]  custom-scrollbar' : 'lg:w-[50%]'} `}
+      >
+        <HeaderText headerText={tab} />
+        {tab === 'My Coupons' && <ProductContainer isMyCoupon={true} />}
         {tab === 'Profile & Security' && <ProfileAndSecurityView />}
         {tab === 'Notifications' && <NotificationsView />}
         {tab == 'Payment Method' && <PaymentMethodView />}
         {tab == 'Order History' && <OrderHistoryView />}
-        {tab == 'Change Password' && <ChangePasswordView/>}
+        {tab == 'Change Password' && <ChangePasswordView />}
       </div>
     </>
   );

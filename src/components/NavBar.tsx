@@ -17,8 +17,8 @@ export default function NavBarComponent() {
   const pathName: string = usePathname().split('/')[2];
   const token = getCookieFn('accessToken');
   return (
-    <div className='flex items-center justify-start sm:justify-center fixed w-full'>
-      <div className='w-[90%] sm:h-[101px] h-[120px] flex items-center justify-between'>
+    <div className='flex items-center justify-start sm:justify-center fixed w-full '>
+      <div className='w-[90%] sm:h-[101px] h-[100px] flex items-center justify-between'>
         <div className='max-w-[309px] h-[38px] flex items-center justify-around pl-3 sm:pl-0'>
           <SideSheet />
           <Image
