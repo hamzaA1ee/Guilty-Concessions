@@ -12,7 +12,7 @@ export default function DashboardView() {
         />
       </div>
 
-      <ProductContainer isMyCoupon={false}/>
+      <ProductContainer isMyCoupon={false} />
     </>
   );
 }
