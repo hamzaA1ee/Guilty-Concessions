@@ -47,6 +47,7 @@ const config: Config = {
         customPink: '#FAF0F8',
         customTextSix: '#9B9B9B',
         customTextSeven: '#95989A',
+        customTextEight: '#A8A6A6',
       },
       width: {
         '3.5/5': '70%', // 3.5 out of 5 is 70%

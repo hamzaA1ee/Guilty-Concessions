@@ -7,11 +7,17 @@ import bubbleOne from '@/../public/assets/images/Oval Copy 2.png';
 import oval from '@/../public/assets/images/Oval.png';
 import bottomOval from '@/../../public/assets/images/Oval Copy.png';
 import ovalOne from '@/../../public/assets/images/Img.png';
-export default function BubbleGroup() {
+
+interface IBubbleGroup {
+  isExternalFunds?: boolean;
+}
+export default function BubbleGroup({ isExternalFunds = false }: IBubbleGroup) {
   return (
     <>
       {' '}
-      <div className='w-[320px] h-[300px] absolute top-0 right-0 sm:top-28 sm:hidden '>
+      <div
+        className={`w-[320px] h-[300px] absolute top-0 right-0 sm:top-28 ${!isExternalFunds && 'sm:hidden'} `}
+      >
         <Image
           src={ovalOne}
           alt='bubble'
@@ -36,22 +42,26 @@ export default function BubbleGroup() {
           alt='bubble'
         ></Image>
       </div>
-      <div className='absolute top-24 left-0 hidden sm:block'>
-        <Image
-          src={oval}
-          width={100}
-          height={97}
-          alt='bubble'
-        ></Image>
-      </div>
-      <div className='absolute  bottom-0 right-0 hidden sm:block  '>
-        <Image
-          src={bottomOval}
-          width={268}
-          height={259}
-          alt='bubble'
-        ></Image>
-      </div>
+      {!isExternalFunds && (
+        <>
+          <div className='absolute top-24 left-0 hidden sm:block'>
+            <Image
+              src={oval}
+              width={100}
+              height={97}
+              alt='bubble'
+            ></Image>
+          </div>
+          <div className='absolute  bottom-0 right-0 hidden sm:block  '>
+            <Image
+              src={bottomOval}
+              width={268}
+              height={259}
+              alt='bubble'
+            ></Image>
+          </div>
+        </>
+      )}
     </>
   );
 }

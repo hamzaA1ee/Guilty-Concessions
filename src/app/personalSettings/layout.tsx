@@ -11,7 +11,7 @@ export default function AuthLayout({
     <>
       <NavBarComponent />
 
-      <div className='flex items-center border-2 border-black  justify-center h-full  sm:min-h-[500px]   w-full overflow-x-hidden '>
+      <div className='flex items-center  justify-center h-full  sm:min-h-[500px]   w-full overflow-x-hidden '>
         <div className='flex flex-col items-start gap-4  h-[80%]     md:w-4/5 w-[90%]'>
           <div className='flex flex-col items-start'>
             <HeaderText

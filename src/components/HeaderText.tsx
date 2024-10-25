@@ -4,6 +4,7 @@ interface IHeader {
   paraText?: string;
   headerClass?: string;
   linkSrc?: string;
+  textSize?: string;
 }
 
 export default function HeaderText({
@@ -11,10 +12,16 @@ export default function HeaderText({
   paraText,
   headerClass,
   linkSrc,
+  textSize,
 }: IHeader) {
   return (
     <>
-      <h1 className={` font-bold ${headerClass} text-[28px]`}> {headerText}</h1>
+      <h1
+        className={` font-bold ${headerClass} ${textSize ? `${textSize}` : 'text-[28px]'}`}
+      >
+        {' '}
+        {headerText}
+      </h1>
 
       {paraText && (
         <p className='font-medium text-[14px] text-customGray  '>{paraText}</p>

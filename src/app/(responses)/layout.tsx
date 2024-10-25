@@ -1,8 +1,14 @@
-import NavBarComponent from '@/components/NavBar';
+import BubbleGroup from '@/components/BubbleGroup';
+
 export default function AuthLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      {children}
+      <BubbleGroup />
+    </>
+  );
 }
