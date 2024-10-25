@@ -9,10 +9,10 @@ export default function SuccessMessageView() {
         email='email@example.com'
       />
       <div className='w-[220px]'>
-      <PrimaryButton
-        text='My orders'
-        className='rounded-3xl bg-customPurple font-normal'
-      />
+        <PrimaryButton
+          text='My orders'
+          className='rounded-3xl bg-customPurple font-normal'
+        />
       </div>
       <h3>What Happen Next?</h3>
     </>
