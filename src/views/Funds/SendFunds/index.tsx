@@ -44,7 +44,6 @@ export default function SendFundsView() {
           <PrimaryButton
             text='Go'
             className='rounded-3xl bg-customPurple sm:ml-14 mt-6 sm:w-[30%]'
-            
           />
         </div>
       </div>

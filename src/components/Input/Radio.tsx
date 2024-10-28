@@ -1,15 +1,14 @@
 'use client';
 
-
 import { CLIENT_STATIC_FILES_RUNTIME_AMP } from 'next/dist/shared/lib/constants';
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
 
 interface IRadio {
   text: string[];
-  className?:string
+  className?: string;
 }
 
-export function Radio({ text,className }: IRadio) {
+export function Radio({ text, className }: IRadio) {
   return (
     <RadioGroup className={`${className} flex gap-4`}>
       <div className='flex items-center space-x-4'>
