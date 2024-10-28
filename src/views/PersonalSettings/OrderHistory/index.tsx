@@ -14,7 +14,7 @@ export default function OrderHistoryView() {
             <OrderHistoryCard key={index} />
           ))}
       </div>
-      <OrderHistoryModal isPurchase={true} />
+      <OrderHistoryModal isPurchase={false} />
     </Dialog>
   );
 }

@@ -1,16 +1,13 @@
+//custom components imports
 import PrimaryButton from '@/components/Button/button';
+import ChangeProfileAvatar from '@/components/ChangeProfileAvatar';
 import PrimaryInput from '@/components/Input/PrimaryInput';
-import ProfileAvatar from '@/components/ProfileAvatar';
 
 export default function ProfileAndSecurityView() {
   return (
     <>
       <div className='w-full flex items-center gap-4'>
-        <ProfileAvatar
-          height={76}
-          width={76}
-        />
-        <p className='text-customPurple text-[14px]'>Change Profile Photo</p>{' '}
+        <ChangeProfileAvatar />{' '}
         {/*here comes the cloudinary component for uploading the images for changing*/}
       </div>
       <div className='flex items-center justify-evenly mt-4 gap-4 flex-wrap sm:flex-nowrap '>

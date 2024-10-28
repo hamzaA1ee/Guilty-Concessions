@@ -8,7 +8,7 @@ export default function CheckoutView() {
       <div className='w-full h-[50px] font-lato bg-customPink p-4 flex items-center'>
         <p className='font-bold text-[15px] ml-[3%]'>Shopping Cart</p>
       </div>
-      {false ? <ConfirmAndPaymentView /> : <SuccessMessageView />}
+      {true ? <ConfirmAndPaymentView /> : <SuccessMessageView />}
     </>
   );
 }

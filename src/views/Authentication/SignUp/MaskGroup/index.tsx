@@ -10,7 +10,7 @@ import bitmapTwo from '@/../public/assets/images/bitmapTwo.png';
 import bitmapThree from '@/../public/assets/images/bitmapThree.png';
 export default function MaskGroupView({ step }: { step: number }) {
   return (
-    <div>
+    <>
       {/* //for step1 starts */}
       <div className='h-full w-full'>
         {step <= 1 ? (
@@ -34,6 +34,6 @@ export default function MaskGroupView({ step }: { step: number }) {
         )}
       </div>
       {/* for step 2 ends */}
-    </div>
+    </>
   );
 }

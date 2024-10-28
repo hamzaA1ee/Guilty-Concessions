@@ -8,7 +8,7 @@ import PaymentView from '../Payment';
 import ConfirmCheckoutView from '../Confirm';
 
 export default function ConfirmAndPaymentView() {
-  const [confirm] = useState(false);
+  const [confirm] = useState(true);
   return (
     <div className='w-full  lg:w-[85%] h-auto flex lg:flex-row flex-col items-center justify-center gap-4 lg:gap-0 '>
       {' '}

@@ -79,12 +79,14 @@ export default function ExternalFundsView() {
                 <PrimaryInput
                   width='50%'
                   placeHolder='MM'
-                  className='text-center pl-0'
+                  className='text-center'
+                  paddingLeft={0}
                 />
                 <PrimaryInput
                   width='50%'
                   placeHolder='YY'
-                  className='text-center pl-0'
+                  className='text-center'
+                  paddingLeft={0}
                 />
               </div>
             </div>

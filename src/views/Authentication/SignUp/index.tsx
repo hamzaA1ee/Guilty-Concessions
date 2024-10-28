@@ -16,10 +16,10 @@ import Image from 'next/image';
 import oval from '@/../public/assets/images/Oval.png';
 
 const SignUpView = () => {
-  const [step] = useState<number>(4);
+  const [step] = useState<number>(1);
   return (
-    <div className='flex items-center sm:justify-center justify-start w-full h-screen overflow-x-hidden overflow-y-hidden  '>
-      <div className='flex items-start  gap-4 h-full sm:mt-[150px] mt-72     lg:w-11/12 md:w-3/5  w-full'>
+    <div className='flex items-center  sm:justify-center justify-start w-full h-screen overflow-x-hidden overflow-y-hidden  '>
+      <div className='flex items-start  gap-4 h-full sm:mt-[150px]  lg:w-11/12 md:w-3/5  w-full'>
         {' '}
         {/**lg:ml-32 was being used for adjusting the image to the end */}
         <div className={`w-full h-3/4 flex justify-center  `}>
