@@ -1,7 +1,7 @@
 // import type { NextRequest } from "next/server";
 import { NextRequest, NextResponse } from 'next/server';
 
-export function middleware(req:NextRequest) {
+export function middleware(req: NextRequest) {
   const token = req.cookies.get('accessToken')?.value;
 
   const { pathname } = req.nextUrl.clone();
