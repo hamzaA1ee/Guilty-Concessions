@@ -1,3 +1,7 @@
+'use client';
+//i18n imports
+import { Trans } from 'react-i18next';
+
 //props interface
 interface IHeader {
   headerText: string;
@@ -20,11 +24,13 @@ export default function HeaderText({
         className={` font-bold ${headerClass} ${textSize ? `${textSize}` : 'text-[28px]'}`}
       >
         {' '}
-        {headerText}
+        <Trans i18nKey={headerText}>{headerText}</Trans>
       </h1>
 
       {paraText && (
-        <p className='font-medium text-[14px] text-customGray  '>{paraText}</p>
+        <p className='font-medium text-[14px] text-customGray  '>
+          <Trans i18nKey={paraText}>{paraText}</Trans>
+        </p>
       )}
       {linkSrc && (
         <a
@@ -32,7 +38,7 @@ export default function HeaderText({
           href={linkSrc}
           className='font-medium text-[14px] text-customGray  '
         >
-          {linkSrc}
+          <Trans i18nKey={linkSrc}>{linkSrc}</Trans>
         </a>
       )}
     </>

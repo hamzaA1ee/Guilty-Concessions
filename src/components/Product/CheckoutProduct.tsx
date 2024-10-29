@@ -1,6 +1,5 @@
 //next imports
-import Image from 'next/image';
-import PrimaryButton from '../Button/button';
+
 import TextAndLogo from '../TextAndLogo';
 
 //react imports

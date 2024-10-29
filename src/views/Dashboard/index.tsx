@@ -1,5 +1,5 @@
+
 import PrimaryInput from '@/components/Input/PrimaryInput';
-import ProductCard from '@/components/Product/ProductCard';
 import ProductContainer from '@/components/ProductContainer';
 
 export default function DashboardView() {

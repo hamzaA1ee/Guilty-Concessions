@@ -1,3 +1,4 @@
+import { Trans } from 'react-i18next';
 import PrimaryButton from './Button/button';
 interface ISavedProducts {
   confirm?: boolean;
@@ -17,7 +18,9 @@ export default function SavedProduct({
       <div className=' h-full flex items-center  gap-2 '>
         <div className='w-[69px] h-[76px] bg-customGrayFour'></div>
         <div className='w-full sm:w-[250px] flex flex-col items-start'>
-          <p className='text-[14px]'>{name}</p>
+          <p className='text-[14px]'>
+            <Trans i18nKey={name}>{name}</Trans>
+          </p>
           <p className='text-[12px] text-customTextThree font-light'>
             {priceOrTime}
           </p>
@@ -26,7 +29,7 @@ export default function SavedProduct({
       {isNotification && (
         <div className='  flex items-center justify-center gap-2'>
           <p className='text-[12px]  text-customTextThree hidden sm:block'>
-            Saved
+            <Trans i18nKey={'Saved'}>Saved</Trans>
           </p>
           <svg
             width={14}

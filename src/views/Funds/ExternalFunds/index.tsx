@@ -5,6 +5,7 @@ import { CheckBox } from '@/components/Input/CheckBox';
 import PrimaryInput from '@/components/Input/PrimaryInput';
 import { Radio } from '@/components/Input/Radio';
 import ProfileAvatar from '@/components/ProfileAvatar';
+import { Trans } from 'react-i18next';
 
 export default function ExternalFundsView() {
   const radio: string[] = ['PayPal', 'Apple Pay', 'Credit Card'];
@@ -53,7 +54,9 @@ export default function ExternalFundsView() {
           textSize='xl:text-[32px] text-[24px]'
         />
         <div className='w-full flex flex-col gap-5'>
-          <p className='text-[15px] text-customTextFive'>Payment Method</p>
+          <p className='text-[15px] text-customTextFive'>
+            <Trans i18nKey={'Payment Method'}>Payment Method</Trans>
+          </p>
 
           <Radio text={radio} />
 
@@ -73,7 +76,9 @@ export default function ExternalFundsView() {
           <div className='flex  gap-8 '>
             <div className='flex sm:w-[50%] md:w-[30%] flex-col gap-2 border-'>
               <p className='text-[15px] text-customTextFive'>
-                Expire Date (MM/YY)
+                <Trans i18nKey={`Expire Date (MM/YY)`}>
+                  Expire Date (MM/YY)
+                </Trans>
               </p>
               <div className='flex  gap-4 '>
                 <PrimaryInput
@@ -105,7 +110,8 @@ export default function ExternalFundsView() {
         </div>
         <div className='flex flex-col '>
           <p className='text-customTextThree text-[16px]'>
-            Total <span className='font-bold'>$0000,00</span>
+            <Trans i18nKey={'Total'}> Total</Trans>{' '}
+            <span className='font-bold'>$0000,00</span>
           </p>
           <PrimaryButton
             text='Purchase'

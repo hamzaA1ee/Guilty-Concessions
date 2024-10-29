@@ -14,9 +14,11 @@ import Image from 'next/image';
 //image imports
 
 import oval from '@/../public/assets/images/Oval.png';
+import { changeLanguage } from '../../../utils/change-language';
 
 const SignUpView = () => {
   const [step] = useState<number>(1);
+  const cL = changeLanguage('ar');
   return (
     <div className='flex items-center  sm:justify-center justify-start w-full h-screen overflow-x-hidden overflow-y-hidden  '>
       <div className='flex items-start  gap-4 h-full sm:mt-[150px]  lg:w-11/12 md:w-3/5  w-full'>

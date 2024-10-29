@@ -1,4 +1,5 @@
 'use client';
+import { Trans } from 'react-i18next';
 
 import { Checkbox } from '@/components/ui/checkbox';
 
@@ -13,7 +14,7 @@ export function CheckBox({ text }: ICheckBox) {
         htmlFor={text}
         className='text-[12px] text-customTextThree  leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70'
       >
-        {text}
+        <Trans i18nKey={text}>{text}</Trans>
       </label>
     </div>
   );

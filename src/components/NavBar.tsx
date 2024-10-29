@@ -13,6 +13,8 @@ import ProfileAvatar from './ProfileAvatar';
 
 //custom imports
 
+import { Trans } from 'react-i18next';
+
 export default function NavBarComponent() {
   const pathName: string = usePathname().split('/')[2];
   const token = getCookieFn('accessToken');
@@ -27,7 +29,7 @@ export default function NavBarComponent() {
             height={18}
             alt='logo'
           ></Image>
-          <h4 className='font-bold ml-2 '>Guilty Concessions</h4>
+          <h4 className='font-bold ml-4 '>Guilty Concessions</h4>
         </div>
         <div className='hidden sm:block'>
           {token ? (
@@ -59,7 +61,7 @@ export default function NavBarComponent() {
                   href={pathName?.includes('auth') ? '/login' : '/auth/login'}
                   className='inline-flex items-center justify-center w-[127px] h-[37px] font-bold rounded-2xl  shadow-both-custom'
                 >
-                  LOGIN
+                  <Trans i18nKey={'LOGIN'}>LOGIN</Trans>
                 </Link>
               )}
             </>

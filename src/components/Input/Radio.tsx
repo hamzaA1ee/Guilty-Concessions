@@ -1,6 +1,6 @@
 'use client';
+import { Trans } from 'react-i18next';
 
-import { CLIENT_STATIC_FILES_RUNTIME_AMP } from 'next/dist/shared/lib/constants';
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
 
 interface IRadio {
@@ -28,7 +28,7 @@ export function Radio({ text, className }: IRadio) {
               htmlFor={val}
               className='text-[12px] text-customTextThree leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70'
             >
-              {val}
+              <Trans i18nKey={val}>{val}</Trans>
             </label>
           </div>
         ))}

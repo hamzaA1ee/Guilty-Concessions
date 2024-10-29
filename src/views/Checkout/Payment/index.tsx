@@ -1,11 +1,15 @@
 import PrimaryButton from '@/components/Button/button';
+import HeaderText from '@/components/HeaderText';
 import TextAndLogo from '@/components/TextAndLogo';
 
 export default function PaymentView() {
   return (
     <>
       <div className=' flex flex-col w-full items-start    h-full gap-6 '>
-        <h4 className='font-bold text-customTextFive'>Delivery Informations</h4>
+        <HeaderText
+          headerClass='font-bold text-customTextFive'
+          headerText='Delivery Informations'
+        />
         <h4>Delivery Address</h4>
         <div className='flex flex-col w-full items-start justify-center xl:pl-4 gap-1 '>
           {/* this div is for storing address information */}

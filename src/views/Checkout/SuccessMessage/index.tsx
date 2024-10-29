@@ -1,3 +1,4 @@
+'use client';
 import PrimaryButton from '@/components/Button/button';
 import SuccessMessage from '@/components/SuccessMessage';
 

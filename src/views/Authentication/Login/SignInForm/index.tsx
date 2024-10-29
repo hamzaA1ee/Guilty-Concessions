@@ -10,6 +10,8 @@ import SocialButton from '@/components/Button/social-button';
 import PrimaryInput from '@/components/Input/PrimaryInput';
 import HeaderText from '@/components/HeaderText';
 
+import { Trans } from 'react-i18next';
+import Hr from '@/components/Hr';
 export default function SignInFormView() {
   return (
     <Fragment>
@@ -34,7 +36,7 @@ export default function SignInFormView() {
             htmlFor='default-radio-1'
             className='ms-2 text-[14px]  font-bold text-customBrown '
           >
-            Remember me
+            <Trans i18nKey={'Remember me'}>Remember me</Trans>
           </label>
         </div>
 
@@ -42,7 +44,7 @@ export default function SignInFormView() {
           href={'/auth/forgot'}
           className='text-customPurple font-bold text-[14px]'
         >
-          Forget Password
+          <Trans i18nKey={'Forgot Password'}>Forgot Password</Trans>
         </Link>
       </div>
 
@@ -51,22 +53,19 @@ export default function SignInFormView() {
         className=' mt-6 bg-customPurple rounded-3xl '
       />
 
-      <div
-        className='py-3 mt-4 
-         flex items-center text-sm before:flex-1 before:border-t before:border-white before:me-6 after:flex-1 after:border-t after:border-white after:ms-6 dark:text-customGray dark:before:border-customGray dark:after:border-customGray'
-      >
-        OR
-      </div>
+      <Hr />
       <SocialButton isGoogle={true} />
       <SocialButton isFacebook={true} />
       <SocialButton isApple={true} />
       <div className='flex items-center justify-center w-full text-[17px] mt-4'>
-        <span className='font-normal mr-3 '>{'Not a member?    '} </span>
+        <span className='font-normal mr-3 '>
+          <Trans i18nKey={'Not a member?'}>{'Not a member?'}</Trans>{' '}
+        </span>
         <Link
           href={'./signup'}
           className='font-bold text-customPurple '
         >
-          Sign Up
+          <Trans i18nKey={'Sign Up'}>Sign Up</Trans>
         </Link>
       </div>
     </Fragment>
