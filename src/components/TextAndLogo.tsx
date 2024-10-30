@@ -1,4 +1,3 @@
-
 import PrimaryButton from './Button/button';
 
 interface ITextAndLogo {
